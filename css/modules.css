@@ -1,0 +1,187 @@
+/*! modules.css for massimo.css v1.0.0 | MIT License */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Display type classes are .dsp-(n) includes font-weight, font-size, and line-height without margin rules.
+ * Text type classes .txt-(n) incudes font-size and line-height without margin and font-weight rules.
+ */
+
+.dsp-1,
+.dsp-2,
+.dsp-3,
+.dsp-4,
+.dsp-5,
+.dsp-6 { font-weight: bold; }
+
+.txt-1,
+.txt-2,
+.txt-3,
+.txt-4,
+.txt-5,
+.txt-6 { font-weight: normal; }
+
+.dsp-1,
+.txt-1 {
+  /*IE*/font-size: 104px;
+  /*IE*/line-height: 90px;
+  /*IE*/letter-spacing: 4-4px;
+
+  font-size: 5.2rem; /* 3 lines of text, aligns optically from baseline to cap height */
+  line-height: 4.5rem; /* 3x line-height set on <body> */
+  letter-spacing: -.2rem;
+}
+
+.dsp-2,
+.txt-2 { 
+  /*IE*/font-size: 60px;
+  /*IE*/line-height: 60px;
+  /*IE*/letter-spacing: -2px;
+
+  font-size: 3rem; /* 2 lines of text, aligns optically from baseline to cap height */
+  line-height: 3rem; /* 2x of line-height set on <body> */
+  letter-spacing: -.1rem;
+}
+
+.dsp-3,
+.txt-3 { 
+  /*IE*/font-size: 20px;
+  font-size: 1rem; /* Same as <body> */
+}
+
+.dsp-4,
+.txt-4 {
+  /*IE*/font-size: 18px;
+  font-size: .9rem;
+}
+
+.dsp-5,
+.txt-5 {
+  /*IE*/font-size: 16px;
+  font-size: .8rem;
+}
+
+.dsp-6,
+.txt-6 {
+  /*IE*/font-size: 14px;
+  font-size: .7rem;
+}
+
+.txt-l { text-align: left; }
+.txt-r { text-align: right; }
+.txt-c { text-align: center; }
+.txt-j { text-align: justify; }
+
+.txt-break {
+  -ms-word-break: break-all;
+      word-break: break-all;
+
+   word-break: break-word;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+
+
+
+/* ==========================================================================
+   Rulers
+   ========================================================================== */
+
+/*
+ * Rulers are used to separate content and are padded with respect to the baseline grid.
+ * Presentational names are used for clarity, but semantic names are welcome; e.g., .sep, .sub.
+ * Only three weights are used to prevent visual clutter.
+ * .hr = horizontal rule
+ * .hrt = horizontal rule top
+ * .hrb = horizontal rule bottom
+ */
+
+.hr {
+  border: none;
+  border-top-style: solid;
+  margin-top: 0;
+}
+  .hr-1 {
+    /*IE*/border-top-width: 15px;
+    /*IE*/margin-bottom: 45px;
+
+    border-top-width: .75rem;
+    margin-bottom: 2.25rem; /* (body line-height - border-top-width) + body line-height */
+  }
+  .hr-2 {
+    /*IE*/border-top-width: 8px;
+    /*IE*/margin-bottom: 22px;
+
+    border-top-width: .4rem;
+    margin-bottom: 1.1rem; /* body line-height - border-top-width */
+  }
+  .hr-3 {
+    /*IE*/border-top-width: 2px;
+    /*IE*/margin-bottom: 28px;
+
+    border-top-width: .1rem;
+    margin-bottom: 1.4rem; /* body line-height - border-top-width */
+  }
+
+.hrt {
+  /*IE*/padding-bottom: 30px;
+
+  border-top-style: solid;
+  padding-bottom: 1.5rem;
+}
+  .hrt-1 {
+    /*IE*/border-top-width: 15px;
+    /*IE*/padding-top: 45px;
+
+    border-top-width: .75rem;
+    padding-top: 2.25rem; /* (body line-height - border-top-width) + body line-height */
+  }
+  .hrt-2 {
+    /*IE*/border-top-width: 8px;
+    /*IE*/padding-top: 22px;
+
+    border-top-width: .4rem;
+    padding-top: 1.1rem; /* body line-height - border-top-width */
+  }
+  .hrt-3 {
+    /*IE*/border-top-width: 2px;
+    /*IE*/padding-top: 28px;
+
+    border-top-width: .1rem;
+    padding-top: 1.4rem; /* body line-height - border-top-width */
+  }
+
+.hrb { border-bottom-style: solid; }
+  .hrb-1 {
+    /*IE*/border-bottom-width: 15px;
+    /*IE*/margin-bottom: 15px;
+
+    border-bottom-width: .75rem;
+    margin-bottom: .75rem; /* border-width + margin-bottom = body line-height */
+  }
+  .hrb-2 {
+    /*IE*/border-bottom-width: 8px;
+    /*IE*/margin-bottom: 22px;
+
+    border-bottom-width: .4rem;
+    margin-bottom: 1.1rem; /* border-width + margin-bottom = body line-height */
+  }
+  .hrb-3 {
+    /*IE*/border-bottom-width: 2px;
+    /*IE*/margin-bottom: 28px;
+
+    border-bottom-width: .1rem;
+    margin-bottom: 1.4rem; /* body line-height - border-top-width */
+  }
+
+
+
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+
+

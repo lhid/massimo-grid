@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+  
+  <head>
+
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Massimo: A Responsive Typographic Grid</title>
+
+    <meta name="description" content="A typographic grid system with utilizing responsive design, rem units, and a strong baseline grid.">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/massimo.css" />
+    <link rel="stylesheet" type="text/css" href="css/modules.css" />
+    <link rel="stylesheet" type="text/css" href="css/state.css" />
+
+    <style type="text/css">
+
+      /* These are colors added for demonstration and testing */
+
+      body { background-color: black; color: black; }
+
+      .l-wrap { background-color: white; }
+
+      .demo-h {}
+        .demo-h > h1,
+        .demo-h > h2,
+        .demo-h > h3,
+        .demo-h > h4,
+        .demo-h > h5,
+        .demo-h > h6 { text-align: right; }
+
+      .hr,
+      .hrt { border-top-color: black; }
+
+      .hrb { border-bottom-color: black; }
+
+      @media only screen and (min-width: 1010px) and (max-width: 1286px) {
+
+        .l-wrap { background-color: gray; }
+
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1009px) {
+
+        .l-wrap { background-color: red; }
+
+      }
+
+      @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+        .l-wrap { background-color: orange; }
+
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 479px) {
+
+        .l-wrap { background-color: yellow; }
+
+      }
+
+      @media only screen and (max-width: 319px) {
+
+        .l-wrap { background-color: green; }
+
+      }
+
+      @media only screen and (max-width: 767px) {
+  
+        .demo-h {}
+          .demo-h > h1,
+          .demo-h > h2,
+          .demo-h > h3,
+          .demo-h > h4,
+          .demo-h > h5,
+          .demo-h > h6 {
+            text-align: left;
+          }
+
+      }
+
+    </style>
+
+    <!-- This fix for alternate rendering modes. http://www.sitepoint.com/html5-shim-ie-emulation-mode/ -->
+    <!--[if IE]>  
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="l-wrap">
+
+      <header class="l-row hrt hrt-1">
+
+        <h1 class="txt-c">Hello, Massimo!</h1>
+
+      </header>
+
+      <div class="l-row hrt hrt-1">
+
+        <div class="l-col l-col-6 demo-h">
+
+          <h1>Level-1</h1>
+
+          <h2>Level-2</h2>
+
+          <h3>Level-3</h3>
+
+          <h4>Level-4</h4>
+
+          <h5>Level-5</h5>
+
+          <h6>Level-6</h6>
+
+        </div>
+
+        <div class="l-col l-col-6">
+
+          <p>
+            <strong>I sit inside a <code>.l-col-6</code>. I am half the page width because Massimo uses a 12-column grid.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim eu. Aliquam erat volutpat. Cras malesuada nisl id lorem gravida auctor. Vivamus condimentum lectus ut sem viverra consequat. Praesent sodales posuere dui et feugiat. Duis tempor lobortis ipsum, ut scelerisque augue dictum vel. Praesent erat lorem, tristique euismod commodo et, mollis sit amet dui.
+          </p>
+
+          <p>
+            Cras malesuada nisl id lorem gravida auctor. Vivamus condimentum lectus ut sem viverra consequat. Praesent sodales posuere dui et feugiat.
+          </p>
+
+        </div>
+
+      </div>
+
+      <section class="l-row hrt hrt-2">
+
+        <div class="l-col l-col-12">
+          <p>
+            <strong>I am a <code>.l-col-12</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit tiam dapibus laoreet.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-11">
+          <p>
+            <strong>I am a <code>.l-col-11</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit tiam dapibus.
+          </p>
+        </div>
+
+        <div class="l-col l-col-1">
+          <p>
+            <strong>I am a <code>.l-col-1</code>.</strong> Lorem ipsum.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-10">
+          <p>
+            <strong>I am a <code>.l-col-10</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="l-col l-col-2">
+          <p>
+            <strong>I am a <code>.l-col-2</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-9">
+          <p>
+            <strong>I am a <code>.l-col-9</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim. Aliquam erat volutpat. Cras malesuada nisl id lorem gravida auctor.
+          </p>
+        </div>
+
+        <div class="l-col l-col-3">
+          <p>
+            <strong>I am a <code>.l-col-3</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-8">
+          <p>
+            <strong>I am a <code>.l-col-8</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim. Aliquam erat volutpat. Cras malesuada nisl id lorem gravida auctor.
+          </p>
+        </div>
+
+        <div class="l-col l-col-4">
+          <p>
+            <strong>I am a <code>.l-col-4</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-7">
+          <p>
+            <strong>I am a <code>.l-col-7</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim.
+          </p>
+        </div>
+
+        <div class="l-col l-col-5">
+          <p>
+            <strong>I am a <code>.l-col-5</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing. Aliquam erat volutpat. Cras malesuada nisl id lorem.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="l-row hrt hrt-3">
+
+        <div class="l-col l-col-6">
+          <p>
+            <strong>I am a <code>.l-col-6</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim.
+          </p>
+        </div>
+
+        <div class="l-col l-col-6">
+          <p>
+            <strong>I am a <code>.l-col-6</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing. Aliquam erat volutpat. Cras malesuada nisl id lorem.
+          </p>
+        </div>
+
+      </section>
+
+      <div class="l-row">
+
+        <section class="l-col l-col-6 hrt hrt-2">
+
+          <section class="l-row">
+
+            <div class="l-col l-col-3">
+              <p>
+                <strong>I am a <code>.l-col-3</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim.
+              </p>
+            </div>
+
+            <div class="l-col l-col-3">
+              <p>
+                <strong>I am a <code>.l-col-3</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim.
+              </p>
+            </div>
+
+          </section>
+
+          <section class="l-row">
+
+            <div class="l-col l-col-2">
+              <p>
+                <strong>I am a <code>.l-col-2</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="l-col l-col-2">
+              <p>
+                <strong>I am a <code>.l-col-2</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="l-col l-col-2">
+              <p>
+                <strong>I am a <code>.l-col-2</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+          </section>
+
+          <section class="l-row hrt hrt-3">
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+            <div class="l-col l-col-1">
+              <p>
+                <strong><code>.l-col-1</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+          </section>
+
+        </section>
+
+        <section class="l-col l-col-6 hrt hrt-2">
+
+          <div>
+
+            <p>
+              <strong>I sit inside a <code>.l-col-6</code>. I have an <code>&lt;hr&gt;</code> right below me.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim eu. Aliquam erat volutpat.
+            </p>
+
+            <hr class="hr hr-3" />
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim, vel tincidunt nunc dignissim eu. Aliquam erat volutpat. Cras malesuada nisl id lorem gravida auctor. Vivamus condimentum lectus ut sem viverra consequat.
+            </p>
+
+          </div>
+
+          <section class="l-row hrt hrt-3">
+
+            <div class="l-col l-col-4">
+              <p>
+                <strong><code>.l-col-4</code>.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus laoreet enim.
+              </p>
+            </div>
+
+            <div class="l-col l-col-2">
+              <p>
+                <strong><code>.l-col-2</code>.</strong> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+          </section>
+
+        </section>
+
+      </div>
+
+      <footer class="l-row hrt hrt-1 hrb hrb-1">
+
+        <p class="dsp-1 txt-c">Grazie!</p>
+
+      </footer>
+
+    </div><!-- /.l-wrap -->
+
+  </body>
+
+</html>

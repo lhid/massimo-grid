@@ -1,0 +1,336 @@
+/*! massimo.css v1.0.0 | MIT License */
+
+/* ==========================================================================
+   Base Layout (small desktop, laptop, 9" landscape) | For 1024 screen size
+   ========================================================================== */
+  
+html { font-size: 20px; }
+
+body {
+  /*IE*/font-size: 20px;
+  /*IE*/line-height: 30px;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+p {
+  /*IE*/margin-bottom: 30px;
+
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*IE*/margin: 0 0 30px 0;
+
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+}
+h1 {
+  /*IE*/font-size: 104px;
+  /*IE*/line-height: 90px;
+  /*IE*/letter-spacing: -4px;
+
+  font-size: 5.2rem; /* 3 lines of text, aligns optically from baseline to cap height */
+  line-height: 4.5rem; /* 3x line-height set on <body> */
+  letter-spacing: -.2rem;
+}
+h2 { 
+  /*IE*/font-size: 60px;
+  /*IE*/line-height: 60px;
+  /*IE*/letter-spacing: -2px;
+
+  font-size: 3rem; /* 2 lines of text, aligns optically from baseline to cap height */
+  line-height: 3rem; /* 2x of line-height set on <body> */
+  letter-spacing: -.1rem;
+}
+h3 {
+  /*IE*/font-size: 20px;
+  font-size: 1rem; /* Same as <body> */
+}
+h4 {
+  /*IE*/font-size: 18px;
+  font-size: .9rem;
+}
+h5 {
+  /*IE*/font-size: 16px;
+  font-size: .8rem;
+}
+h6 {
+  /*IE*/font-size: 14px;
+  font-size: .7rem;
+}
+
+.l-wrap {
+  /*IE*/width: 930px;
+  /*IE*/padding: 25px 40px;
+
+  width: 46.5rem; 
+  padding: 1.25rem 2rem;
+  margin: 0 auto;
+}
+
+/* Uses Micro Clearfix by Nicolas Gallagher 
+http://nicolasgallagher.com/micro-clearfix-hack/ */
+.l-row {}
+  .l-wrap:before,
+  .l-wrap:after,
+  .l-row:before,
+  .l-row:after {
+    content: " ";
+    display: table;
+  }
+  .l-wrap:after,
+  .l-row:after {
+    clear: both;
+  }
+  .l-wrap,
+  .l-row {
+    *zoom: 1;
+  }
+
+.l-col {
+  /*IE*/margin-left: 30px;
+
+  float: left;
+  margin-left: 1.5rem;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+  .l-col:first-child { /* a container will be needed for a new row */
+    margin-left: 0;
+  }
+  /* extender class to reverse the float */
+  .l-col-r {
+    float: right;
+  }
+
+.l-col-1     { /*IE*/width: 50px; width: 2.5rem; }
+.l-col-2     { /*IE*/width: 130px; width: 6.5rem; } /* col + margin-left, etc. = 4rem */
+.l-col-3     { /*IE*/width: 210px; width: 10.5rem; }
+.l-col-4     { /*IE*/width: 290px; width: 14.5rem; }
+.l-col-5     { /*IE*/width: 370px; width: 18.5rem; }
+.l-col-6     { /*IE*/width: 450px; width: 22.5rem; }
+.l-col-7     { /*IE*/width: 530px; width: 26.5rem; }
+.l-col-8     { /*IE*/width: 610px; width: 30.5rem; }
+.l-col-9     { /*IE*/width: 690px; width: 34.5rem; }
+.l-col-10   { /*IE*/width: 770px; width: 38.5rem; }
+.l-col-11   { /*IE*/width: 850px; width: 42.5rem; }
+.l-col-12   { /*IE*/width: 930px; width: 46.5rem; }
+
+/* Type Size and Columns | Controls font-size in repect to column width.
+   ========================================================================== */
+
+.l-col-12,
+.l-col-11,
+.l-col-10 {
+  /*IE*/font-size: 60px;
+  /*IE*/line-height: 60px;
+  /*IE*/letter-spacing: -2px;
+
+  font-size: 3rem; /* 2 line blocks, baseline of bottom line to caps height of top line */
+  line-height: 3rem; /* 2x of line-height set on <body> */
+  letter-spacing: -.1rem;
+}
+
+.l-col-9,
+.l-col-8,
+.l-col-7,
+.l-col-6 {
+  /*IE*/font-size: 20px;
+  font-size: 1rem;
+}
+
+.l-col-5,
+.l-col-4,
+.l-col-3,
+.l-col-2,
+.l-col-1 {
+  /*IE*/font-size: 16px;
+  font-size: .8rem;
+
+  /* Breaks the words for smaller columns */
+  -ms-word-break: break-all;
+      word-break: break-all;
+
+   word-break: break-word;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+/* !END Type Size and Columns */
+
+
+
+/* ==========================================================================
+   Remaining Media Queries
+   ========================================================================== */
+
+/* §Bold (larger desktop displays) | For 1287+ screen size
+   ========================================================================== */
+
+@media only screen and (min-width: 1286px) {
+
+  html {
+    font-size: 22px;
+  }
+
+  .l-wrap {
+    width: 52.5rem; /* = 1155px */
+    padding: 1.5rem 2rem;
+  }
+
+  .l-col-1     { width: 3rem; }
+  .l-col-2     { width: 7.5rem; } /* col + margin-left, etc. = 4.5rem */
+  .l-col-3     { width: 12rem; }
+  .l-col-4     { width: 16.5rem; }
+  .l-col-5     { width: 21rem; }
+  .l-col-6     { width: 25.5rem; }
+  .l-col-7     { width: 30rem; }
+  .l-col-8     { width: 34.5rem; }
+  .l-col-9     { width: 39rem; }
+  .l-col-10   { width: 43.5rem; }
+  .l-col-11   { width: 48rem; }
+  .l-col-12   { width: 52.5rem; }
+
+}
+
+
+
+/* §Roman (9" portrait) | For 768 screen size 
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1009px) {
+
+  html { font-size: 18px; }
+
+  .l-wrap {
+    width: 39rem;
+    padding: 1rem 1.75rem;
+  }
+
+  .l-col-1     { width: 1.875rem; }
+  .l-col-2     { width: 5.25rem; } /* col + margin-left, etc. = 3.375rem */
+  .l-col-3     { width: 8.625rem; }
+  .l-col-4     { width: 12rem; }
+  .l-col-5     { width: 15.375rem; }
+  .l-col-6     { width: 18.75rem; }
+  .l-col-7     { width: 22.125rem; }
+  .l-col-8     { width: 25.5rem; }
+  .l-col-9     { width: 28.875rem; }
+  .l-col-10   { width: 32.25rem; }
+  .l-col-11   { width: 35.625rem; }
+  .l-col-12   { width: 39rem; }
+
+}
+
+
+
+/* §Light | For 480 screen size 
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  /* Back to 20px to optimize words/chararcters per line. Readability. */
+  html { font-size: 20px; }
+
+  .l-wrap {
+    padding: .75rem 1.25rem;
+  }
+
+  /* Repeated styles are in last media query */
+
+}
+
+
+
+/* §Extra-Light | For 320 screen size 
+   ========================================================================== */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+  html { font-size: 18px; }
+
+  .l-wrap {
+    padding: .75rem 1rem;
+  }
+
+  /* Repeated styles are in last media query */
+
+}
+
+
+
+/* §Condensed | For 240 screen size 
+   ========================================================================== */
+
+@media only screen and (max-width: 319px) {
+
+  html { font-size: 16px; }
+
+  .l-wrap {
+    padding: .75rem;
+  }
+
+  /* Repeated styles are in last media query */
+
+}
+
+
+
+/* §Light, §Extra-Light, §Condensed | For 768- screen size 
+   ========================================================================== */
+
+@media only screen and (max-width: 767px) {
+
+  .l-wrap {
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  /* one-column fluid layout */
+  .l-col { margin-left: 0; }
+
+  .l-col-1,
+  .l-col-2,
+  .l-col-3,
+  .l-col-4,
+  .l-col-5,
+  .l-col-6,
+  .l-col-7,
+  .l-col-8,
+  .l-col-9,
+  .l-col-10,
+  .l-col-11,
+  .l-col-12 { width: 100%; }
+
+  h1 { 
+    font-size: 3rem; /* 3x body */
+    line-height: 3rem;
+    letter-spacing: -.1rem;
+  }
+
+  h2 {
+    font-size: 2rem; /* 2x body */
+    letter-spacing: normal;
+  }
+
+  .l-col-12,
+  .l-col-11,
+  .l-col-10 {
+    font-size: 2rem; /* 2x body */
+    letter-spacing: normal;
+  }
+
+}
+
+
