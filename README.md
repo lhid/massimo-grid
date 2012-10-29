@@ -1,5 +1,4 @@
-# Massimo:
-## A Responsive Typographic Grid
+# Massimo: A Responsive Typographic Grid
 
 ## Intro
 
