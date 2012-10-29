@@ -24,7 +24,7 @@ Using [SMACSS](http://smacss.com/) [Open/Closed](http://en.wikipedia.org/wiki/Op
 
 ### Widths
 
-All widths have been measured in the `[rem](http://www.w3.org/TR/css3-values/#rem-unit)</a>` unit. This keeps the designer conscious of the relationship between font-size and any supporting graphical elements such as images, video, rulers, etc. It is especially important when considering the word count or the character count per line block. Even though the translation is not literal, a container with a width of 22.5rem will yield a character count of roughly 2.5 times the width. That leaves us with approximately 57 characters, divided by an average of 6 characters per word or about 9 words per line&mdash;an optimal word count for comfortable reading! I consider this a promotion of designing for the content instead of designing for the device.
+All widths have been measured in the `[rem]`(http://www.w3.org/TR/css3-values/#rem-unit) unit. This keeps the designer conscious of the relationship between font-size and any supporting graphical elements such as images, video, rulers, etc. It is especially important when considering the word count or the character count per line block. Even though the translation is not literal, a container with a width of 22.5rem will yield a character count of roughly 2.5 times the width. That leaves us with approximately 57 characters, divided by an average of 6 characters per word or about 9 words per line&mdash;an optimal word count for comfortable reading! I consider this a promotion of designing for the content instead of designing for the device.
 
 ### Headings
 
