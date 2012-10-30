@@ -10,7 +10,7 @@ Massimo is a responsive grid system inspired by the [Vignelli Canon](http://www.
 
 The baseline grid of Massimo is created by the line-height of the body text, which is set on the `<body>` element to begin the appropriate cascade. All other elements on the page should take the body line-height into consideration when making decisions on height, margins, and padding. Top and/or bottom margins, for example, should be multiples of the line-height value in order to adhere to the grid.
 
-[Example &rarr;](example.html)
+[Example &rarr;](http://alchemyindesign.com/massimo/example.html)
 
 ### The Columnar Grid
 
@@ -44,7 +44,7 @@ I went back and forth on this several times because I didn't want to make too ma
 
 That being said, built into Massimo are default type size changes in relation to the grid column you are using. I did this to optimize readability and to emphasize hierarchy. One of the benefits of doing this is that the text maintains its visual hierarchy even on the one-column layout of mobile. It is a feature that is easy to turn off with CSS comments.
 
-[Example &rarr;](example.html)
+[Example &rarr;](http://alchemyindesign.com/massimo/example.html)
 
 ### Rulers
 
