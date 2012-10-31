@@ -68,6 +68,25 @@ NOTE: IE8 and below will only recieve a fixed width site&mdash;no responsive des
 
 ## Closing
 
+### Acknowledgements
+
+Massimo wouldn't have come to be if it weren't for the works and contributions of others in the community.
+
+- [Massimo Vigelli](https://twitter.com/vignelli) | for his [entire life's work](http://vignellidesign.tumblr.com/)
+- [Nathan Smith](https://twitter.com/nathansmith) | for the [960 Grid System](http://960.gs/)
+- [Dave Gamache](https://twitter.com/dhg) | for [Skeleton](http://www.getskeleton.com/)
+- [Jonathan Snook](https://twitter.com/snookca) | for [SMACSS](http://smacss.com/)
+- [Nicole Sullivan](https://twitter.com/stubbornella) | for [OOCSS](https://github.com/stubbornella/oocss/wiki)
+- [Harry Roberts](https://twitter.com/csswizardry) | for [expanding ideas](http://csswizardry.com/) on OOCSS
+
+And also...
+
+- [Patrick Kranzlmüller](https://twitter.com/sehmaschine/) | for feedback when Massimo was in beta and his wonderful work on [MUELLER](http://www.muellergridsystem.com/)
+- [Ryan Deba](https://twitter.com/ryandeba) | for feedback and advice all the way through Massimo's creation.
+- And everyone else I bugged on Twitter for feedback :\-D
+
+### Final Thoughts
+
 Massimo was created out of personal interest. Being from the world of print and having a long standing admiration for the work of the masters, it is a nod in the direction of those who came before us in the visual design world. Although web is NOT print and should be [treated as its own medium](http://www.alistapart.com/articles/the-web-aesthetic/), I still feel that we can borrow many ideas and philosophies that have been maintained in the print world for centuries. 
 
 Massimo is for you to play with, experiment with, and build upon. I tried not to make more design decisions than needed to get the point across, so hopefully it is easy to modify as well.
