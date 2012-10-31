@@ -28,7 +28,7 @@ All widths have been measured in the [`rem`](http://www.w3.org/TR/css3-values/#r
 
 ### Headings
 
-The heading elements `<h1>` through `<h6>` have been set with consideration of two metrics&mdash;font-size and line-height. From baseline to cap [height](http://en.wikipedia.org/wiki/Cap_height), the `<h1>` spans three lines of text. The line-height is the literal equivalent of three times the line-height of the body text. The tricky value is font-size&mdash;this is purely optical and can change between fonts. From there, the `<h2>` is two lines of text and the `<h3>` is one.
+The heading elements `<h1>` through `<h6>` have been set with consideration of two metrics&mdash;font-size and line-height. From baseline to [cap height](http://en.wikipedia.org/wiki/Cap_height), the `<h1>` spans three lines of text. The line-height is the literal equivalent of three times the line-height of the body text. The tricky value is font-size&mdash;this is purely optical and can change between fonts. From there, the `<h2>` is two lines of text and the `<h3>` is one.
 
 The `<h4>`, where traditionally is equal to the body text font-size, has been sized down so that it is smaller than the main body text. It is perfect for heading supplemental text, as well as the `<h5>`. The `<h6>` will be for fine print or `<small>` headings. So, this leaves you with an even split of three heading sizes for main text and three heading sizes for smaller auxiliary text.
 
@@ -77,6 +77,7 @@ Massimo wouldn't have come to be if it weren't for the works and contributions o
 - [Dave Gamache](https://twitter.com/dhg) | for [Skeleton](http://www.getskeleton.com/)
 - [Jonathan Snook](https://twitter.com/snookca) | for [SMACSS](http://smacss.com/)
 - [Nicole Sullivan](https://twitter.com/stubbornella) | for [OOCSS](https://github.com/stubbornella/oocss/wiki)
+- [Nicolas Gallagher](https://twitter.com/necolas) | for [Normalise.css](http://necolas.github.com/normalize.css/)
 - [Harry Roberts](https://twitter.com/csswizardry) | for [expanding ideas](http://csswizardry.com/) on OOCSS
 
 And also...
