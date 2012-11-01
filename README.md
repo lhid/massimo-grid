@@ -72,12 +72,12 @@ NOTE: IE8 and below will only recieve a fixed width site&mdash;no responsive des
 
 Massimo wouldn't have come to be if it weren't for the works and contributions of others in the community.
 
-- [Massimo Vigelli](https://twitter.com/vignelli) | for his [entire life's work](http://vignellidesign.tumblr.com/)
+- [Massimo Vigelli](https://twitter.com/vignelli) | for his [entire life's work](http://www.vignelli.com/)
 - [Nathan Smith](https://twitter.com/nathansmith) | for the [960 Grid System](http://960.gs/)
 - [Dave Gamache](https://twitter.com/dhg) | for [Skeleton](http://www.getskeleton.com/)
 - [Jonathan Snook](https://twitter.com/snookca) | for [SMACSS](http://smacss.com/)
 - [Nicole Sullivan](https://twitter.com/stubbornella) | for [OOCSS](https://github.com/stubbornella/oocss/wiki)
-- [Nicolas Gallagher](https://twitter.com/necolas) | for [Normalise.css](http://necolas.github.com/normalize.css/)
+- [Nicolas Gallagher](https://twitter.com/necolas) | for [Normalize.css](http://necolas.github.com/normalize.css/)
 - [Harry Roberts](https://twitter.com/csswizardry) | for [expanding ideas](http://csswizardry.com/) on OOCSS
 
 And also...
