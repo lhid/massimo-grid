@@ -63,30 +63,32 @@ h6 {
   font-size: .7rem;
 }
 
-.l-wrap {
+.l-constrained {
   /*IE*/width: 930px;
-  /*IE*/padding: 25px 40px;
+  /*IE*/padding-right: 40px;
+  /*IE*/padding-left: 40px;
 
   width: 46.5rem; 
-  padding: 1.25rem 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   margin: 0 auto;
 }
 
 /* Uses Micro Clearfix by Nicolas Gallagher 
 http://nicolasgallagher.com/micro-clearfix-hack/ */
 .l-row {}
-  .l-wrap:before,
-  .l-wrap:after,
+  .l-constrained:before,
+  .l-constrained:after,
   .l-row:before,
   .l-row:after {
     content: " ";
     display: table;
   }
-  .l-wrap:after,
+  .l-constrained:after,
   .l-row:after {
     clear: both;
   }
-  .l-wrap,
+  .l-constrained,
   .l-row {
     *zoom: 1;
   }
@@ -181,9 +183,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
     font-size: 22px;
   }
 
-  .l-wrap {
+  .l-constrained {
     width: 52.5rem; /* = 1155px */
-    padding: 1.5rem 2rem;
   }
 
   .l-col-1     { width: 3rem; }
@@ -210,9 +211,10 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
 
   html { font-size: 18px; }
 
-  .l-wrap {
+  .l-constrained {
     width: 39rem;
-    padding: 1rem 1.75rem;
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
   }
 
   .l-col-1     { width: 1.875rem; }
@@ -240,8 +242,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
   /* Back to 20px to optimize words/chararcters per line. Readability. */
   html { font-size: 20px; }
 
-  .l-wrap {
-    padding: .75rem 1.25rem;
+  .l-constrained {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
   }
 
   /* Repeated styles are in last media query */
@@ -257,8 +260,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
 
   html { font-size: 18px; }
 
-  .l-wrap {
-    padding: .75rem 1rem;
+  .l-constrained {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   /* Repeated styles are in last media query */
@@ -274,8 +278,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
 
   html { font-size: 16px; }
 
-  .l-wrap {
-    padding: .75rem;
+  .l-constrained {
+    padding-right: .75rem;
+    padding-left: .75rem;
   }
 
   /* Repeated styles are in last media query */
@@ -289,7 +294,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 @media only screen and (max-width: 767px) {
 
-  .l-wrap {
+  .l-constrained {
     width: 100%;
 
     -webkit-box-sizing: border-box;
