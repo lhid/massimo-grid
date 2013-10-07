@@ -3,7 +3,7 @@
 /* ==========================================================================
    Base Layout (small desktop, laptop, 9" landscape) | For 1024 screen size
    ========================================================================== */
-  
+
 html { font-size: 20px; }
 
 body {
@@ -37,7 +37,7 @@ h1 {
   line-height: 4.5rem; /* 3x line-height set on <body> */
   letter-spacing: -.2rem;
 }
-h2 { 
+h2 {
   /*IE*/font-size: 60px;
   /*IE*/line-height: 60px;
   /*IE*/letter-spacing: -2px;
@@ -124,49 +124,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
 .l-col-10   { /*IE*/width: 770px; width: 38.5rem; }
 .l-col-11   { /*IE*/width: 850px; width: 42.5rem; }
 .l-col-12   { /*IE*/width: 930px; width: 46.5rem; }
-
-/* Type Size and Columns | Controls font-size in repect to column width.
-   ========================================================================== */
-
-.l-col-12,
-.l-col-11,
-.l-col-10 {
-  /*IE*/font-size: 60px;
-  /*IE*/line-height: 60px;
-  /*IE*/letter-spacing: -2px;
-
-  font-size: 3rem; /* 2 line blocks, baseline of bottom line to caps height of top line */
-  line-height: 3rem; /* 2x of line-height set on <body> */
-  letter-spacing: -.1rem;
-}
-
-.l-col-9,
-.l-col-8,
-.l-col-7,
-.l-col-6 {
-  /*IE*/font-size: 20px;
-  font-size: 1rem;
-}
-
-.l-col-5,
-.l-col-4,
-.l-col-3,
-.l-col-2,
-.l-col-1 {
-  /*IE*/font-size: 16px;
-  font-size: .8rem;
-
-  /* Breaks the words for smaller columns */
-  -ms-word-break: break-all;
-      word-break: break-all;
-
-   word-break: break-word;
-
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
-}
-/* !END Type Size and Columns */
 
 
 
@@ -325,13 +282,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
   }
 
   h2 {
-    font-size: 2rem; /* 2x body */
-    letter-spacing: normal;
-  }
-
-  .l-col-12,
-  .l-col-11,
-  .l-col-10 {
     font-size: 2rem; /* 2x body */
     letter-spacing: normal;
   }
